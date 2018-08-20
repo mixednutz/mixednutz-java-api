@@ -1,5 +1,11 @@
 package net.mixednutz.api.model;
 
+/**
+ * Information about this social network.
+ * 
+ * @author apfesta
+ *
+ */
 public class NetworkInfo {
 
 	private String displayName;

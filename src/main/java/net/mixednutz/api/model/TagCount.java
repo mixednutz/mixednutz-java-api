@@ -1,5 +1,11 @@
 package net.mixednutz.api.model;
 
+/**
+ * Object representing a count of tags
+ * 
+ * @author apfesta
+ *
+ */
 public class TagCount {
 	
 	private String name;

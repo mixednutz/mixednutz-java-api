@@ -6,7 +6,13 @@ import java.util.List;
 
 import net.mixednutz.api.model.Oembeds.Oembed;
 
-public class TimelineElement extends ApiObject {
+/**
+ * An element that appears in a network, group, or user timeline.
+ * 
+ * @author apfesta
+ *
+ */
+public class TimelineElement extends ApiResource {
 
 	/**
 	 * The type of element
@@ -17,6 +23,11 @@ public class TimelineElement extends ApiObject {
 	 * User who posted this element
 	 */
 	private UserSmall postedByUser;
+	
+	/**
+	 * Optional group this element was posted to
+	 */
+	private GroupSmall postedToGroup;
 
 	/**
 	 * This can be either
@@ -64,6 +75,14 @@ public class TimelineElement extends ApiObject {
 
 	public void setPostedByUser(UserSmall postedByUser) {
 		this.postedByUser = postedByUser;
+	}
+
+	public GroupSmall getPostedToGroup() {
+		return postedToGroup;
+	}
+
+	public void setPostedToGroup(GroupSmall postedToGroup) {
+		this.postedToGroup = postedToGroup;
 	}
 
 	public ZonedDateTime getPostedOnDate() {

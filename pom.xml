@@ -12,6 +12,9 @@
 	<url>https://www.mixednutz.net</url>
 	<description>MixedNutz API for Java.  Contains model objects for serialization</description>
 	
+	<!-- 
+		Using Spring Boot Starter to keep dependencies syncronized across projects
+	 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -29,6 +32,7 @@
 	
 	<dependencies>
 	
+		<!-- Jackson Annotations for JSON serialization -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-annotations</artifactId>

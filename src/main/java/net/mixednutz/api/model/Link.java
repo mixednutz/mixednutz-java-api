@@ -1,5 +1,11 @@
 package net.mixednutz.api.model;
 
+/**
+ * Link to an external webpage.
+ * 
+ * @author apfesta
+ *
+ */
 public class Link {
 	
 	private String href;

@@ -2,7 +2,14 @@ package net.mixednutz.api.model;
 
 import java.util.List;
 
-class ApiObject {
+/**
+ * Base building block for API resource.  Each API resource should have a URI, a URL and 
+ * potential actions.
+ * 
+ * @author apfesta
+ *
+ */
+class ApiResource {
 	
 	/**
 	 * Resource Identifier of element.  

@@ -1,5 +1,11 @@
 package net.mixednutz.api.model;
 
+/**
+ * Object representing a count of unicode based reactions
+ * 
+ * @author apfesta
+ *
+ */
 public class ReactionCount {
 	
 	/**

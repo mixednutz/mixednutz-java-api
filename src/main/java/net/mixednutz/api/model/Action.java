@@ -1,5 +1,14 @@
 package net.mixednutz.api.model;
 
+/**
+ * Action that can be performed.  
+ * 
+ * Action URLs should be GET requests with any required parameter already provided. 
+ * The client will GET this resource with no modification of the URL.
+ * 
+ * @author apfesta
+ *
+ */
 public class Action {
 
 	private String name;

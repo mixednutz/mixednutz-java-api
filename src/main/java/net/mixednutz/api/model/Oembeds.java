@@ -9,6 +9,12 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 
+/**
+ * OEMBED objects
+ * 
+ * @author apfesta
+ *
+ */
 public class Oembeds {
 	
 	@JsonTypeInfo(  

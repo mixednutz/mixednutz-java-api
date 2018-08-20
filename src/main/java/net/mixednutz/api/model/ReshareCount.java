@@ -1,5 +1,10 @@
 package net.mixednutz.api.model;
 
+/**
+ * Object representing times an element has been reshared with a given network
+ * @author apfesta
+ *
+ */
 public class ReshareCount {
 	
 	private NetworkInfo networkInfo;

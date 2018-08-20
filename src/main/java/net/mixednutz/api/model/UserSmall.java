@@ -1,6 +1,18 @@
 package net.mixednutz.api.model;
 
-public class UserSmall extends ApiObject {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+/**
+ * A brief version of a User for use in other resources.
+ * 
+ * @author apfesta
+ *
+ */
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class UserSmall extends ApiResource {
 
 	private String username;
 	private String displayName;

@@ -1,19 +1,24 @@
 package net.mixednutz.api.model;
 
-public class GroupSmall {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-	private String uri;
+/**
+ * A brief version of a Group for use in other resources.
+ * 
+ * @author apfesta
+ *
+ */
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class GroupSmall extends ApiResource {
+
 	private String groupName;
 	private String displayName;
 	private NetworkInfo networkInfo;
 	private Image avatar;
 	
-	public String getUri() {
-		return uri;
-	}
-	public void setUri(String uri) {
-		this.uri = uri;
-	}
 	public String getGroupName() {
 		return groupName;
 	}

@@ -1,5 +1,11 @@
 package net.mixednutz.api.model;
 
+/**
+ * Link to an external image.
+ * 
+ * @author apfesta
+ *
+ */
 public class Image {
 	
 	private String src;
