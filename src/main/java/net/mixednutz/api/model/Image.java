@@ -11,6 +11,19 @@ public class Image {
 	private String src;
 	private String alt;
 
+	public Image() {
+	}
+
+	public Image(String src) {
+		this(src, null);
+	}
+
+	public Image(String src, String alt) {
+		super();
+		this.src = src;
+		this.alt = alt;
+	}
+
 	public String getSrc() {
 		return src;
 	}

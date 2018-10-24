@@ -2,9 +2,8 @@ package net.mixednutz.api.model;
 
 import java.io.Serializable;
 import java.time.ZonedDateTime;
+import java.util.Collection;
 import java.util.List;
-
-import net.mixednutz.api.model.Oembeds.Oembed;
 
 /**
  * An element that appears in a network, group, or user timeline.
@@ -30,21 +29,34 @@ public class TimelineElement extends ApiResource {
 	private GroupSmall postedToGroup;
 
 	/**
-	 * This can be either
-	 * <li>the date created
-	 * <li>the last post in the conversation
+	 * The date created
 	 */
 	private ZonedDateTime postedOnDate;
+	
+	/**
+	 * The date updated or the last post in the conversation
+	 */
+	private ZonedDateTime updatedOnDate;
 
 	/**
 	 * Unique value to relative to the timeline page.
 	 */
 	private Serializable paginationId;
+	
+	/**
+	 * Optional Title
+	 */
+	private String title;
+	
+	/**
+	 * Optional short description (may be truncated)
+	 */
+	private String description;
 
 	/**
-	 * Optional Oembed data.
+	 * Optional Alternate data.
 	 */
-	private Oembed oembed;
+	private Collection<AlternateLink> alternateLinks;
 
 	/**
 	 * Optional count of reactions this element has received
@@ -93,6 +105,14 @@ public class TimelineElement extends ApiResource {
 		this.postedOnDate = postedOnDate;
 	}
 
+	public ZonedDateTime getUpdatedOnDate() {
+		return updatedOnDate;
+	}
+
+	public void setUpdatedOnDate(ZonedDateTime updatedOnDate) {
+		this.updatedOnDate = updatedOnDate;
+	}
+
 	public Serializable getPaginationId() {
 		return paginationId;
 	}
@@ -101,12 +121,28 @@ public class TimelineElement extends ApiResource {
 		this.paginationId = paginationId;
 	}
 
-	public Oembed getOembed() {
-		return oembed;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setOembed(Oembed oembed) {
-		this.oembed = oembed;
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Collection<AlternateLink> getAlternateLinks() {
+		return alternateLinks;
+	}
+
+	public void setAlternateLinks(Collection<AlternateLink> alternateLinks) {
+		this.alternateLinks = alternateLinks;
 	}
 
 	public List<ReactionCount> getReactions() {
@@ -139,7 +175,18 @@ public class TimelineElement extends ApiResource {
 	public static class Type {
 
 		String name;
-		NetworkInfo networkInfo;
+		String namespace;
+
+		public Type() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+
+		public Type(String name, String namespace) {
+			super();
+			this.name = name;
+			this.namespace = namespace;
+		}
 
 		public String getName() {
 			return name;
@@ -149,12 +196,12 @@ public class TimelineElement extends ApiResource {
 			this.name = name;
 		}
 
-		public NetworkInfo getNetworkInfo() {
-			return networkInfo;
+		public String getNamespace() {
+			return namespace;
 		}
 
-		public void setNetworkInfo(NetworkInfo networkInfo) {
-			this.networkInfo = networkInfo;
+		public void setNamespace(String namespace) {
+			this.namespace = namespace;
 		}
 
 	}

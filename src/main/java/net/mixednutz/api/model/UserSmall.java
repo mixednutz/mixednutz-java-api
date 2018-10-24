@@ -16,7 +16,6 @@ public class UserSmall extends ApiResource {
 
 	private String username;
 	private String displayName;
-	private NetworkInfo networkInfo;
 	private Image avatar;
 	
 	public String getUsername() {
@@ -30,12 +29,6 @@ public class UserSmall extends ApiResource {
 	}
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
-	}
-	public NetworkInfo getNetworkInfo() {
-		return networkInfo;
-	}
-	public void setNetworkInfo(NetworkInfo networkInfo) {
-		this.networkInfo = networkInfo;
 	}
 	public Image getAvatar() {
 		return avatar;
