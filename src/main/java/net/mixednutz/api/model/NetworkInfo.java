@@ -15,6 +15,8 @@ public class NetworkInfo {
 	private String oauth2TokenUrl;
 	private String timelineUrl;
 	private String timelineNextPageUrl;
+	private String publicTimelineUrl;
+	private String publicTimelineNextPageUrl;
 	
 	public NetworkInfo() {
 		super();
@@ -58,6 +60,18 @@ public class NetworkInfo {
 	}
 	public void setTimelineNextPageUrl(String timelineNextPageUrl) {
 		this.timelineNextPageUrl = timelineNextPageUrl;
+	}
+	public String getPublicTimelineUrl() {
+		return publicTimelineUrl;
+	}
+	public void setPublicTimelineUrl(String publicTimelineUrl) {
+		this.publicTimelineUrl = publicTimelineUrl;
+	}
+	public String getPublicTimelineNextPageUrl() {
+		return publicTimelineNextPageUrl;
+	}
+	public void setPublicTimelineNextPageUrl(String publicTimelineNextPageUrl) {
+		this.publicTimelineNextPageUrl = publicTimelineNextPageUrl;
 	}
 	
 }
