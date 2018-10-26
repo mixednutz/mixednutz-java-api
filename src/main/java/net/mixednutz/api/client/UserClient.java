@@ -12,6 +12,25 @@ public interface UserClient {
 	UserSmall getUser(String username);
 	
 	/**
+	 * Retrieve a timeline for the current user's content to for this given network.
+	 * 
+	 * @param username
+	 * @return
+	 */
+	Page<TimelineElement, Instant> getTimeline();
+	
+	/**
+	 * Retrieve a timeline for the current user's content to for this given network.
+	 * 
+	 * @param username
+	 * @param pagination
+	 * @param pageSize
+	 * @return
+	 */
+	Page<TimelineElement, Instant> getTimeline(PageRequest<Instant> pagination);
+	
+	
+	/**
 	 * Retrieve a timeline of user's content to for this given network.
 	 * 
 	 * @param username
