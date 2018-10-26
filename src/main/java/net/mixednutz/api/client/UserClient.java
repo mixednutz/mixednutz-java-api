@@ -27,8 +27,7 @@ public interface UserClient {
 	 * @param pageSize
 	 * @return
 	 */
-	Page<TimelineElement, Instant> getTimeline(String username, PageRequest<Instant> pagination, 
-			int pageSize);
+	Page<TimelineElement, Instant> getTimeline(String username, PageRequest<Instant> pagination);
 	
 	void subscribeToUser(String username);
 }

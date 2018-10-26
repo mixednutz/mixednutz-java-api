@@ -5,12 +5,18 @@ import java.time.ZonedDateTime;
 import java.util.Collection;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 /**
  * An element that appears in a network, group, or user timeline.
  * 
  * @author apfesta
  *
  */
+@JsonInclude(Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class TimelineElement extends ApiResource {
 
 	/**

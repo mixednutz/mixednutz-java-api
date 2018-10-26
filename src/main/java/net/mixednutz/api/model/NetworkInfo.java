@@ -17,6 +17,8 @@ public class NetworkInfo {
 	private String timelineNextPageUrl;
 	private String publicTimelineUrl;
 	private String publicTimelineNextPageUrl;
+	private String userTimelineUrl;
+	private String userTimelineNextPageUrl;
 	
 	public NetworkInfo() {
 		super();
@@ -72,6 +74,18 @@ public class NetworkInfo {
 	}
 	public void setPublicTimelineNextPageUrl(String publicTimelineNextPageUrl) {
 		this.publicTimelineNextPageUrl = publicTimelineNextPageUrl;
+	}
+	public String getUserTimelineUrl() {
+		return userTimelineUrl;
+	}
+	public void setUserTimelineUrl(String userTimelineUrl) {
+		this.userTimelineUrl = userTimelineUrl;
+	}
+	public String getUserTimelineNextPageUrl() {
+		return userTimelineNextPageUrl;
+	}
+	public void setUserTimelineNextPageUrl(String userTimelineNextPageUrl) {
+		this.userTimelineNextPageUrl = userTimelineNextPageUrl;
 	}
 	
 }
