@@ -4,9 +4,9 @@ The MixedNutz API is a foundation for a distributed social network.  It's based 
 
 While this API is written in Java, it is a simple spec that is intended to be JSON entities and webservice calls.  It can be ported to other languages fairly easily.
 
-## Getting Started
+## Implementations
 
-TODO
+* (MixedNutz Java API Core Implementation)[https://github.com/mixednutz/mixednutz-java-api-core] - Basic implementation using Spring Framework to interface with MixedNutz.net
 
 ## Contributing
 
