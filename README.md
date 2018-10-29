@@ -6,7 +6,7 @@ While this API is written in Java, it is a simple spec that is intended to be JS
 
 ## Implementations
 
-* [https://github.com/mixednutz/mixednutz-java-api-core](MixedNutz Java API Core Implementation) - Basic implementation using Spring Framework to interface with MixedNutz.net
+* [MixedNutz Java API Core Implementation](https://github.com/mixednutz/mixednutz-java-api-core) - Basic implementation using Spring Framework to interface with MixedNutz.net
 
 ## Contributing
 
