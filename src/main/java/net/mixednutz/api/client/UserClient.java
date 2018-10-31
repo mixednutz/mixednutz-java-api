@@ -2,14 +2,14 @@ package net.mixednutz.api.client;
 
 import java.time.Instant;
 
-import net.mixednutz.api.model.Page;
-import net.mixednutz.api.model.PageRequest;
-import net.mixednutz.api.model.TimelineElement;
-import net.mixednutz.api.model.UserSmall;
+import net.mixednutz.api.model.IPage;
+import net.mixednutz.api.model.IPageRequest;
+import net.mixednutz.api.model.ITimelineElement;
+import net.mixednutz.api.model.IUserSmall;
 
 public interface UserClient {
 
-	UserSmall getUser(String username);
+	IUserSmall getUser(String username);
 	
 	/**
 	 * Retrieve a timeline for the current user's content to for this given network.
@@ -17,7 +17,7 @@ public interface UserClient {
 	 * @param username
 	 * @return
 	 */
-	Page<TimelineElement, Instant> getTimeline();
+	IPage<? extends ITimelineElement, Instant> getTimeline();
 	
 	/**
 	 * Retrieve a timeline for the current user's content to for this given network.
@@ -27,7 +27,7 @@ public interface UserClient {
 	 * @param pageSize
 	 * @return
 	 */
-	Page<TimelineElement, Instant> getTimeline(PageRequest<Instant> pagination);
+	IPage<? extends ITimelineElement, Instant> getTimeline(IPageRequest<Instant> pagination);
 	
 	
 	/**
@@ -36,7 +36,7 @@ public interface UserClient {
 	 * @param username
 	 * @return
 	 */
-	Page<TimelineElement, Instant> getTimeline(String username);
+	IPage<? extends ITimelineElement, Instant> getTimeline(String username);
 	
 	/**
 	 * Retrieve a timeline of user's content to for this given network.
@@ -46,7 +46,7 @@ public interface UserClient {
 	 * @param pageSize
 	 * @return
 	 */
-	Page<TimelineElement, Instant> getTimeline(String username, PageRequest<Instant> pagination);
+	IPage<? extends ITimelineElement, Instant> getTimeline(String username, IPageRequest<Instant> pagination);
 	
 	void subscribeToUser(String username);
 }
