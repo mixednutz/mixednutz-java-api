@@ -17,17 +17,13 @@ public interface IApiResource {
 	 * @return
 	 */
 	public String getUrl();
-	
-	public void setUrl(String url);
-	
+		
 	/**
 	 * Internet location of the UI version of the Element
 	 * @return
 	 */
 	public String getUri();
-	
-	public void setUri(String uri);
-	
+		
 	/**
 	 * Possible additional actions (outside of normal CRUD actions) that can be 
 	 * performed

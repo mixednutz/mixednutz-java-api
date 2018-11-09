@@ -1,7 +1,5 @@
 package net.mixednutz.api.client;
 
-import java.time.Instant;
-
 import net.mixednutz.api.model.IPage;
 import net.mixednutz.api.model.IPageRequest;
 import net.mixednutz.api.model.ITimelineElement;
@@ -12,7 +10,7 @@ import net.mixednutz.api.model.ITimelineElement;
  * @author apfesta
  *
  */
-public interface TimelineClient {
+public interface TimelineClient<Token> {
 	
 	/**
 	 * Retrieve a timeline of all content subscribed to for this given network.
@@ -20,7 +18,7 @@ public interface TimelineClient {
 	 * @param username
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Instant> getTimeline();
+	IPage<? extends ITimelineElement, Token> getTimeline();
 	
 	/**
 	 * Retrieve a timeline of all content subscribed to for this given network.
@@ -30,7 +28,7 @@ public interface TimelineClient {
 	 * @param pageSize
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Instant> getTimeline(IPageRequest<Instant> pagination);
+	IPage<? extends ITimelineElement, Token> getTimeline(IPageRequest<Token> pagination);
 	
 	/**
 	 * Retrieve a timeline of all public to for this given network.
@@ -38,7 +36,7 @@ public interface TimelineClient {
 	 * @param username
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Instant> getPublicTimeline();
+	IPage<? extends ITimelineElement, Token> getPublicTimeline();
 	
 	/**
 	 * Retrieve a timeline of all public to for this given network.
@@ -48,7 +46,7 @@ public interface TimelineClient {
 	 * @param pageSize
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Instant> getPublicTimeline(IPageRequest<Instant> pagination);
+	IPage<? extends ITimelineElement, Token> getPublicTimeline(IPageRequest<Token> pagination);
 	
 	
 

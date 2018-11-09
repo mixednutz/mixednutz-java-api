@@ -37,15 +37,11 @@ public interface ITimelineElement extends IApiResource {
 	 */
 	public ZonedDateTime getPostedOnDate();
 
-	public void setPostedOnDate(ZonedDateTime postedOnDate);
-
 	/**
 	 * The date updated or the last post in the conversation
 	 * @return
 	 */
 	public ZonedDateTime getUpdatedOnDate();
-
-	public void setUpdatedOnDate(ZonedDateTime updatedOnDate);
 
 	/**
 	 * Unique value to relative to the timeline page.
@@ -53,23 +49,17 @@ public interface ITimelineElement extends IApiResource {
 	 */
 	public Serializable getPaginationId();
 
-	public void setPaginationId(Serializable paginationId);
-
 	/**
 	 * Optional Title
 	 * @return
 	 */
 	public String getTitle();
 
-	public void setTitle(String title);
-
 	/**
 	 * Optional short description (may be truncated)
 	 * @return
 	 */
 	public String getDescription();
-
-	public void setDescription(String description);
 
 	/**
 	 * Optional Alternate data.
@@ -102,11 +92,7 @@ public interface ITimelineElement extends IApiResource {
 
 		public String getName();
 
-		public void setName(String name);
-
 		public String getNamespace();
-
-		public void setNamespace(String namespace);
 
 	}
 }

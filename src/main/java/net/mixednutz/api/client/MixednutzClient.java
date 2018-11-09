@@ -4,8 +4,8 @@ public interface MixednutzClient {
 
 	GroupClient getGroupClient();
 		
-	TimelineClient getTimelineClient();
+	TimelineClient<?> getTimelineClient();
 	
-	UserClient getUserClient();
+	UserClient<?> getUserClient();
 	
 }

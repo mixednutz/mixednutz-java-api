@@ -2,9 +2,24 @@ package net.mixednutz.api.model;
 
 public interface INetworkInfoSmall {
 
+	/**
+	 * Name of this social network
+	 * 
+	 * @return
+	 */
 	public String getDisplayName();
-	public void setDisplayName(String displayName);
+	
+	/**
+	 * Name of the host/server.  Maybe be used as a unique ID.
+	 * 
+	 * @return
+	 */
 	public String getHostName();
-	public void setHostName(String hostName);
+	
+	/**
+	 * Get the FontAwesome Icon name (Optional)
+	 * @return
+	 */
+	public String getFontAwesomeIconName();
 	
 }

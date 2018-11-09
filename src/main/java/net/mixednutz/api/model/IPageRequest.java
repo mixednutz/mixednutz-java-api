@@ -6,6 +6,8 @@ public interface IPageRequest<Token> {
 	
 	public Token getStart();
 	
+	public Integer getPageSize();
+	
 	public SortDirection getSortDirection();
 		
 }
