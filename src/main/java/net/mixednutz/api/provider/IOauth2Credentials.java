@@ -1,4 +1,4 @@
-package net.mixednutz.api.adapter.model;
+package net.mixednutz.api.provider;
 
 
 public interface IOauth2Credentials extends ICredentials {
