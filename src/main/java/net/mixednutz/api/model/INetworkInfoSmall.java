@@ -22,4 +22,11 @@ public interface INetworkInfoSmall {
 	 */
 	public String getFontAwesomeIconName();
 	
+	/**
+	 * Returns a list of MIME types that this Network can post.
+	 * 
+	 * @return
+	 */
+	public String[] compatibleMimeTypes();
+	
 }

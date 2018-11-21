@@ -1,5 +1,7 @@
 package net.mixednutz.api.provider;
 
+import net.mixednutz.api.model.INetworkInfoSmall;
+
 /**
  * Social network API provider.
  * 
@@ -9,6 +11,8 @@ package net.mixednutz.api.provider;
 public interface ApiProvider<Api, Credentials> {
 	
 	public String getProviderId();
+	
+	public INetworkInfoSmall getNetworkInfo();
 	
 	public Class<Api> getApiClass();
 	
