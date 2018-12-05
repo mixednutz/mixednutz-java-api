@@ -17,5 +17,11 @@ public interface ApiProvider<Api, Credentials> {
 	public Class<Api> getApiClass();
 	
 	public Api getApi(Credentials creds);
+	
+	/**
+	 * Simple getter to return the Generic Credentials Class
+	 * @return
+	 */
+	public Class<Credentials> getCredentialsInterface();
 
 }
