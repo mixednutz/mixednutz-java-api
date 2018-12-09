@@ -7,6 +7,19 @@ import net.mixednutz.api.model.IUserSmall;
 
 public interface UserClient<Token> {
 
+	/**
+	 * Gets the current user's profile
+	 * 
+	 * @return
+	 */
+	IUserSmall getUser();
+	
+	/**
+	 * Gets the given user's profile
+	 * 
+	 * @param username
+	 * @return
+	 */
 	IUserSmall getUser(String username);
 	
 	/**
