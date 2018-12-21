@@ -11,12 +11,5 @@ public interface IUserSmall extends IApiResource {
 	public String getUsername();
 	public String getDisplayName();
 	public IImage getAvatar();
-	
-	/**
-	 * ID native to API
-	 * 
-	 * @return
-	 */
-	public String getId();
-	
+		
 }
