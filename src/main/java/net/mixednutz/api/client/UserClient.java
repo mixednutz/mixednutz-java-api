@@ -28,7 +28,7 @@ public interface UserClient<Token> {
 	 * @param username
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Token> getTimeline();
+	IPage<? extends ITimelineElement, Token> getUserTimeline();
 	
 	/**
 	 * Retrieve a timeline for the current user's content to for this given network.
@@ -38,7 +38,7 @@ public interface UserClient<Token> {
 	 * @param pageSize
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Token> getTimeline(IPageRequest<Token> pagination);
+	IPage<? extends ITimelineElement, Token> getUserTimeline(IPageRequest<Token> pagination);
 	
 	
 	/**
@@ -47,7 +47,7 @@ public interface UserClient<Token> {
 	 * @param username
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Token> getTimeline(String username);
+	IPage<? extends ITimelineElement, Token> getUserTimeline(String username);
 	
 	/**
 	 * Retrieve a timeline of user's content to for this given network.
@@ -57,7 +57,7 @@ public interface UserClient<Token> {
 	 * @param pageSize
 	 * @return
 	 */
-	IPage<? extends ITimelineElement, Token> getTimeline(String username, IPageRequest<Token> pagination);
+	IPage<? extends ITimelineElement, Token> getUserTimeline(String username, IPageRequest<Token> pagination);
 	
 	void subscribeToUser(String username);
 }
