@@ -11,11 +11,45 @@ package net.mixednutz.api.model;
  */
 public interface IAction {
 
+	/**
+	 * ID for Action.  Should be unique.
+	 * @return
+	 */
 	public String getName();
-	public void setName(String name);
-	public String getDisplayName();
-	public void setDisplayName(String displayName);
-	public ILink getUrl();
-	public void setUrl(ILink url);
 	
+	/**
+	 * Display name for Action.  May be included as a button or link's text
+	 * @return
+	 */
+	public String getDisplayName();
+	
+	/**
+	 * Description for Action.  Maybe be included as a action's tooltip.
+	 * @return
+	 */
+	public String getDescription();
+	
+	/**
+	 * Get the FontAwesome Icon name (Optional)
+	 * Do not include the "fa-" prefix. (Ex. twitter)
+	 * 
+	 * @return
+	 */
+	public String getFontAwesomeIconName();
+	
+	/**
+	 * Get the Gyphicon Icon name (Optional)
+	 * Do not include the "glyphicon-" prefix.  (Ex. tag)
+	 * 
+	 * @return
+	 */
+	public String getGlyphiconIconName();
+	
+	/**
+	 * URL for action
+	 * 
+	 * @return
+	 */
+	public ILink getUrl();
+		
 }

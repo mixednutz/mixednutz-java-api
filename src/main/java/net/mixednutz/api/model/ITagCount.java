@@ -9,8 +9,13 @@ package net.mixednutz.api.model;
 public interface ITagCount extends ICount {
 		
 	public String getName();
-	public void setName(String name);
+	
 	public String getDisplayName();
-	public void setDisplayName(String displayName);
+	
+	/**
+	 * Toggle this tag
+	 * @return
+	 */
+	public IAction getToggleAction();
 	
 }

@@ -13,13 +13,17 @@ public interface IReactionCount extends ICount {
 	 * @return
 	 */
 	public String getUnicode();
-	public void setUnicode(String unicode);
 
 	/**
 	 * Description of the Unicode
 	 * @return
 	 */
 	public String getDescription();
-	public void setDescription(String description);
+	
+	/**
+	 * Toggle this reaction
+	 * @return
+	 */
+	public IAction getToggleAction();
 	
 }
