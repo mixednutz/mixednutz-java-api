@@ -13,7 +13,8 @@ import java.util.List;
 public interface IApiResource {
 		
 	/**
-	 * Identifier used by the provider.
+	 * Identifier used by the provider.  
+	 * Implementations are expected to provide a subtype of Serializable
 	 * 
 	 * @return
 	 */

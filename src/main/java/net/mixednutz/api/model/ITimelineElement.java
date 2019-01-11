@@ -45,6 +45,8 @@ public interface ITimelineElement extends IApiResource {
 
 	/**
 	 * Unique value to relative to the timeline page.
+	 * Implementations are expected to provide a subtype of Serializable
+	 * 
 	 * @return
 	 */
 	public Serializable getPaginationId();
