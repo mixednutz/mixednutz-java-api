@@ -1,7 +1,7 @@
 package net.mixednutz.api.model;
 
 /**
- * Interface for keyset pagination request.
+ * Interface for seek pagination request.
  * 
  * This will query for a result set
  * PageSize number of records in a 

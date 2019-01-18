@@ -13,6 +13,14 @@ import net.mixednutz.api.model.ITimelineElement;
 public interface TimelineClient<Token> {
 	
 	/**
+	 * Create a IPageRequest that can be used to poll the next set of data.
+	 * Allows the provider to provide the page size and direction data should go.
+	 * 
+	 * @return
+	 */
+	<T> IPageRequest<T> getTimelinePollRequest(T start);
+		
+	/**
 	 * Retrieve a timeline of all content subscribed to for this given network.
 	 * 	 
 	 * @param username
