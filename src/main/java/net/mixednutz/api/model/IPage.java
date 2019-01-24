@@ -7,10 +7,11 @@ public interface IPage<D, Token> {
 	public List<D> getItems();
 	
 	/**
-	 * Get the request for the previous page according to the tokens and sort.
+	 * Reverses the pagination and returns the first page in the opposite direction.
+	 * Reverse should only be called once and subsequent requests should use nextPage.
 	 * @return
 	 */
-	public IPageRequest<Token> getPrevPage();
+	public IPageRequest<Token> getReversePage();
 	
 	/**
 	 * Get the current page request
@@ -26,6 +27,6 @@ public interface IPage<D, Token> {
 	
 	public boolean hasNext();
 	
-	public boolean hasPrev();
+	public boolean hasReverse();
 	
 }
