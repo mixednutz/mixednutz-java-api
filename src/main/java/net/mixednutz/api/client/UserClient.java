@@ -23,6 +23,14 @@ public interface UserClient<Token> {
 	IUserSmall getUser(String username);
 	
 	/**
+	 * Create a IPageRequest that can be used to poll the next set of data.
+	 * Allows the provider to provide the page size and direction data should go.
+	 * 
+	 * @return
+	 */
+	<T> IPageRequest<T> getUserTimelinePollRequest(T start);
+	
+	/**
 	 * Retrieve a timeline for the current user's content to for this given network.
 	 * 
 	 * @param username
