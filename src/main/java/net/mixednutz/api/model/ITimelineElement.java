@@ -92,9 +92,25 @@ public interface ITimelineElement extends IApiResource {
 	 */
 	public interface Type {
 
+		/**
+		 * Display name of this type
+		 * 
+		 * @return
+		 */
 		public String getName();
 
+		/**
+		 * Namespace/hostname this type originates from
+		 * @return
+		 */
 		public String getNamespace();
+		
+		/**
+		 * Unique ID of this type.
+		 * 
+		 * @return
+		 */
+		public String getId();
 
 	}
 }
