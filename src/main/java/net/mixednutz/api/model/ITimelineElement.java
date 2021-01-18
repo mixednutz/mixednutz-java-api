@@ -86,6 +86,13 @@ public interface ITimelineElement extends IApiResource {
 	 * @return
 	 */
 	public List<? extends IReshareCount> getReshares();
+	
+	/**
+	 * Optional list of comments about this element
+	 * 
+	 * @return
+	 */
+	public List<? extends ITimelineElement> getComments();
 
 	/**
 	 * The type can be a custom type created by the remote network,
