@@ -8,4 +8,6 @@ public interface MixednutzClient {
 	
 	UserClient<?> getUserClient();
 	
+	PostClient<?> getPostClient();
+	
 }
