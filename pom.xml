@@ -22,10 +22,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
+	<!-- 
+		Deploy JARs to GitHub
+	 -->
 	<distributionManagement>
 	   	<repository>
      			<id>github</id>
-     			<name>GitHub OWNER Apache Maven Packages</name>
+     			<name>GitHub MixedNutz Apache Maven Packages</name>
      			<url>https://maven.pkg.github.com/mixednutz/mixednutz-java-api</url>
    		</repository>
 	</distributionManagement>
