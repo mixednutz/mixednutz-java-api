@@ -8,4 +8,10 @@ package net.mixednutz.api.model;
  */
 public interface IPost {
 
+	public void setText(String text);
+		
+	public void setUrl(String url);
+	
+	public void setTags(String[] tags);
+		
 }

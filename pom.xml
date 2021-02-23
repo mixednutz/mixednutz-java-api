@@ -21,6 +21,29 @@
 		<version>2.0.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+	<organization>
+        <name>Andrew Festa</name>
+        <url>http://www.andrewfesta.com</url>
+    </organization>
+        
+    <scm>
+		<connection>scm:git:ssh://git@github.com/mixednutz/mixednutz-java-api.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/mixednutz/mixednutz-java-api.git</developerConnection>
+		<url>https://github.com/mixednutz/mixednutz-java-api</url>
+		<tag>HEAD</tag>
+    </scm>
+	
+	<!-- 
+		Deploy JARs to GitHub
+	 -->
+	<distributionManagement>
+	   	<repository>
+     			<id>github</id>
+     			<name>GitHub MixedNutz Apache Maven Packages</name>
+     			<url>https://maven.pkg.github.com/mixednutz/${project.artifactId}</url>
+   		</repository>
+	</distributionManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
