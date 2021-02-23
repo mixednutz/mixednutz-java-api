@@ -22,6 +22,18 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
+	<organization>
+        <name>Andrew Festa</name>
+        <url>http://www.andrewfesta.com</url>
+    </organization>
+        
+    <scm>
+		<connection>scm:git:ssh://git@github.com/mixednutz/mixednutz-java-api.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/mixednutz/mixednutz-java-api.git</developerConnection>
+		<url>https://github.com/mixednutz/mixednutz-java-api</url>
+		<tag>HEAD</tag>
+    </scm>
+	
 	<!-- 
 		Deploy JARs to GitHub
 	 -->
