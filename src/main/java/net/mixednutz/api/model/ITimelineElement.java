@@ -18,6 +18,12 @@ public interface ITimelineElement extends IApiResource {
 	 * @return
 	 */
 	public Type getType();
+	
+	/**
+	 * Who can see this element
+	 * @return
+	 */
+	public IVisibility getVisibility();
 
 	/**
 	 * User who posted this element
