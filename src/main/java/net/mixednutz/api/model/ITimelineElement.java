@@ -58,6 +58,13 @@ public interface ITimelineElement extends IApiResource {
 	public Serializable getPaginationId();
 
 	/**
+	 * Provider-specific reference to this element used for replies
+	 * 
+	 * @return
+	 */
+	public Serializable getReference();
+	
+	/**
 	 * Optional Title
 	 * @return
 	 */
