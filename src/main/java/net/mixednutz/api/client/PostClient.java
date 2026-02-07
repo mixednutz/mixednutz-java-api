@@ -6,6 +6,8 @@ import net.mixednutz.api.model.IPost;
 import net.mixednutz.api.model.ITimelineElement;
 
 public interface PostClient<P extends IPost> {
+	
+	boolean canPost();
 
 	/**
 	 * Posts to a timeline
