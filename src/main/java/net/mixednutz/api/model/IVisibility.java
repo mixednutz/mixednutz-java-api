@@ -18,6 +18,8 @@ public interface IVisibility {
 	
 	public Set<? extends IGroupSmall> getFriendGroups();
 	
+	public Set<? extends IExternalRole> getExternalGroups();
+	
 	/**
 	 * The basis for site level security based on the relation with other users
 	 * 
@@ -29,6 +31,7 @@ public interface IVisibility {
 	 * <li>ALL_FRIENDS - All friends (mutual followers) can see it
 	 * <li>ALL_USERS - All authenticated users can see it
 	 * <li>WORLD - Everyone including unauthenticated users can see it
+	 * <li>EXTERNAL_GROUP - A group maintained by an external subscription system
 	 * </ul>
 	 *
 	 */
@@ -40,7 +43,8 @@ public interface IVisibility {
 		ALL_FRIENDS, 
 		ALL_FOLLOWERS, 
 		ALL_USERS,
-		WORLD
+		WORLD,
+		EXTERNAL_GROUP
 			
 	}
 	

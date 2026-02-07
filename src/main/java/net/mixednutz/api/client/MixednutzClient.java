@@ -10,4 +10,6 @@ public interface MixednutzClient {
 	
 	PostClient<?> getPostClient();
 	
+	RoleClient getRoleClient();
+	
 }
