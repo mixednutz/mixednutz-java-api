@@ -30,6 +30,12 @@ public interface ITimelineElement extends IApiResource {
 	 * @return
 	 */
 	public IUserSmall getPostedByUser();
+	
+	/**
+	 * Users who contrinuted this element
+	 * @return
+	 */
+	public List<? extends IUserSmall> getContributedByUser();
 
 	/**
 	 * Optional group this element was posted to
